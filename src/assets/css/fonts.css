@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@500&family=Fredoka+One&family=Lato:wght@900&family=Monoton&family=Shadows+Into+Light&family=Shippori+Antique&display=swap");
+
+.fredoka {
+  font-family: "Fredoka One", cursive;
+}
+
+.lato {
+  font-family: "Lato", sans-serif;
+}
+
+.monoton {
+  font-family: "Lato", sans-serif;
+}
+
+.shadows-into-light {
+  font-family: "Shadows Into Light", cursive;
+}
+
+.shippori-antique {
+  font-family: "Shippori Antique", sans-serif;
+}
+
+.exo {
+  font-family: "Exo", sans-serif;
+}

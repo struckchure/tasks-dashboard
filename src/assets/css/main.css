@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font-family: 'Fredoka One', cursive;
+
+font-family: 'Lato', sans-serif;
+
+font-family: 'Monoton', cursive;
+
+font-family: 'Shadows Into Light', cursive;
+
+font-family: 'Shippori Antique', sans-serif;
+*/
+
+nav,
+aside {
+  @apply bg-transparent;
+  font-family: "Shippori Antique", sans-serif;
+}
+
+nav {
+  @apply px-4 flex flex-row items-center justify-between ml-[5%] text-xs;
+}
+
+nav > .links {
+  @apply flex flex-row items-center justify-between w-[30%];
+}
+
+nav > .links .nav-item {
+  @apply py-2 text-gray-300 font-bold transition-all duration-75;
+}
+
+nav > .links .nav-item.active,
+nav > .links .nav-item:hover {
+  @apply border-b-[4px] border-gray-200 text-white;
+}
+
+nav > .tools {
+  @apply flex flex-row items-center justify-between w-[7%];
+}
+
+nav > .tools .notification-btn {
+  @apply relative;
+}
+
+.notification-btn > i {
+  @apply text-white;
+}
+
+.notification-btn > label {
+  @apply rounded-full w-4 h-4 font-bold text-white bg-red-600 absolute top-[-30%] left-2;
+  font-size: 0.8em;
+}
+
+nav > .tools .avatar-btn {
+  @apply flex flex-row items-center justify-center;
+}
+
+nav > .tools .avatar {
+  @apply w-7 h-7 rounded-full mx-1;
+}
+
+aside {
+  @apply h-screen w-[5%] fixed left-0 top-0 py-10 px-2 flex flex-col items-center justify-between;
+}
+
+aside .sidebar-item {
+  @apply cursor-pointer p-2 py-[4px];
+}
+
+.sidebar-item.active > p {
+  @apply bg-blue-500;
+}
+
+.sidebar-item > p {
+  @apply bg-[#8a797921] hover:bg-gray-500 transition-all duration-200 rounded-2xl h-10 w-12 p-2;
+}
+
+.sidebar-item > label {
+  @apply text-white text-xs font-bold py-2 block break-words;
+}
+
+.sidebar-item > p > i {
+  @apply w-full h-full text-gray-300;
+}
+
+.sidebar-footer {
+  @apply flex flex-col items-center justify-between h-[15%];
+}
+
+.sidebar-setting {
+  @apply text-white hover:text-gray-400 transition-all duration-75;
+}
+
+.version {
+  @apply text-xs text-gray-300 text-center;
+}
+
+main {
+  @apply bg-gray-800 h-screen;
+}
+
+.content {
+  @apply container mx-auto bg-gray-900 rounded-2xl ml-[5%] h-[90%] relative;
+}
+
+.content-footer {
+  @apply absolute bottom-0 h-14 w-full bg-gray-700 rounded-b-2xl px-4 py-2 flex flex-row items-center justify-between;
+}
+
+.content-footer button {
+  @apply mx-2 px-4 py-2 rounded-xl bg-gray-900 text-xs text-white;
+}
+
+.toolbar,
+.toolbar > .actions {
+  @apply flex flex-row items-center justify-between;
+}
+
+.input-icon {
+  @apply bg-gray-800 rounded-xl p-2 px-4;
+}
+
+.input-icon > i {
+  @apply text-white;
+}
+
+.input-icon > input {
+  @apply bg-transparent text-gray-400 focus:outline-none;
+}
+
+.action-btn {
+  @apply py-2 px-4 text-white rounded-xl bg-green-600 hover:bg-green-700 transition-all duration-100;
+}
+
+.date {
+  @apply grid place-items-center text-white;
+  font-family: "Lato", sans-serif;
+}
+
+table {
+  @apply w-full h-full;
+}
+
+th,
+td {
+  @apply p-2 border-0;
+}
+
+tr {
+  @apply text-white text-left;
+}
+
+tr > th:nth-child(1),
+tr > td:nth-child(1),
+tr > th:nth-child(2),
+tr > td:nth-child(2) {
+  @apply w-5;
+}
+
+thead > tr {
+  @apply bg-gray-900 font-bold;
+}
+
+tbody > tr:nth-child(odd) {
+  @apply bg-gray-800;
+}
+
+tbody > tr:nth-child(even) {
+  @apply bg-gray-900;
+}
+
+td > button {
+  @apply rounded-full w-7 h-7 p-2 grid place-items-center bg-gray-600 text-center;
+}
